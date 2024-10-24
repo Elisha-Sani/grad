@@ -1,0 +1,8 @@
+.picture {
+    width: 200px; /* Width of the picture */
+    height: 200px; /* Height of the picture */
+    border-radius: 50%; /* Make the picture circular */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Soft shadow effect */
+    margin: 20px; /* Margin around the picture */
+    object-fit: cover; /* Ensure the image covers the area */
+  }

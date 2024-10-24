@@ -1,0 +1,55 @@
+.typing-container {
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    align-items: center; /* Center align messages */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px; /* Add padding */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.typing-text {
+    font-size: 5vw; /* Default responsive font size based on viewport width */
+    font-weight: bold; /* Font weight */
+    color: #fff; /* Text color */
+    margin: 4px 0; /* Reduced margin around the text */
+    max-width: 95%; /* Limit the width of the text */
+    overflow-wrap: break-word; /* Allow text to break if it exceeds max-width */
+    text-align: center; /* Center align text */
+    border-right: 2px solid #fff; /* Cursor effect */
+    animation: blink 0.7s step-end infinite; /* Blinking cursor */
+}
+
+/* Keyframes for blinking cursor */
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+/* Media queries for specific screen sizes */
+@media (max-width: 600px) {
+    .typing-text {
+        font-size: 4vw; /* Further reduced font size for small screens */
+        margin: 4px 0; /* Reduced margin for smaller screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .typing-text {
+        font-size: 3vw; /* Medium font size for tablets */
+        margin: 4px 0; /* Adjusted margin for medium screens */
+    }
+}
+
+@media (min-width: 1201px) {
+    .typing-text {
+        font-size: 20px; /* Larger font size for desktops */
+    }
+}
